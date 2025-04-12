@@ -3,8 +3,29 @@ from keras.models import load_model
 from PIL import Image
 import numpy as np
 import io
+import requests
 
 app = Flask(__name__)
+
+# OneDrive URL to your model file
+model_url = "https://1drv.ms/u/c/3a7e9e95600e8051/EURViyY9BN1AllEiR1BAcAgBKwOmJMHVtG_d8yrlybw5Rw?e=VR6sRu"
+
+# Download the model from OneDrive
+def download_model(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        # Save the model file locally
+        with open('VGG16_model.h5', 'wb') as f:
+            f.write(response.content)
+        print("Model downloaded successfully")
+    else:
+        print("Failed to download model")
+        raise Exception("Failed to download model")
+
+# Download the model on startup
+download_model(model_url)
+
+# Load the model after download
 model = load_model('VGG16_model.h5')
 
 # Adjust these to match your model input
