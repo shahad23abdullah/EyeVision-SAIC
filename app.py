@@ -5,6 +5,10 @@ import numpy as np
 import io
 import requests
 from onedrivedownloader import download  # إضافة مكتبة تحميل ملفات OneDrive
+import os
+
+# Force TensorFlow to use only CPU
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 app = Flask(__name__)
 
