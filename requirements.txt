@@ -98,7 +98,7 @@ nbconvert==7.16.6
 nbformat==5.10.4
 nest-asyncio==1.6.0
 notebook_shim==0.2.4
-numpy==1.24.3
+numpy>=1.21,<2.2
 opt_einsum==3.4.0
 optree==0.15.0
 overrides==7.7.0
