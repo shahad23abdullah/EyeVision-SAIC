@@ -26,7 +26,7 @@ def download_model(url):
 download_model(model_url)
 
 # Load the model after download
-model = load_model('VGG16_model.h5')
+model = load_model(r'C:\Users\shaha\OneDrive\Desktop\Codeing Project by myself\SAIC\FirstProject\NewUI\VGG16_model.h5')
 
 # Adjust these to match your model input
 IMG_SIZE = (224, 224)
