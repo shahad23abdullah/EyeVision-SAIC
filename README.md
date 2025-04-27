@@ -40,4 +40,4 @@ These results suggest that the model has effectively learned the features from t
 The system, powered by a deep learning model, successfully classified 10 types of eye diseases with high accuracy. Achieving a training accuracy of 97.49%, validation accuracy of 92.67%, and test accuracy of 92.91%, the results demonstrate that the model is both effective and reliable. The system performs accurately and shows strong generalization on unseen data. This highlights the potential of deep learning in supporting early detection and diagnosis of eye diseases, ultimately contributing to improved patient care.
 
 ## Demo
-https://huggingface.co/spaces/Yousef20/SAIC-eye-classify
+https://saic-ai-eye-health.hf.space/
